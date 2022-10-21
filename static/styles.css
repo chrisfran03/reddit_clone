@@ -1,0 +1,154 @@
+body {
+	margin: 0;
+	background: #dae0e6;
+}
+.container{
+display: flex;
+background:white;
+align:center;
+}
+.nav{
+ background: white;
+align-items: right;
+justify-content: right;
+}
+.nav input[type=text] {
+  float: none;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 400px;
+  font-size: 17px;
+}
+.button {
+  transition-duration: 0.4s;
+}
+
+.button1 {
+background-color: white;
+font-size: 14px;
+font-weight: bold;
+color:#087cd4;
+padding: 10px 24px;
+border-radius: 25px;
+border: 1px solid #087cd4;
+}
+
+.button1:hover {
+  background-color:#f8fcfc;
+  color: #087cd4;
+  cursor: pointer;
+}
+.button2 {
+background-color:  #087cd4;
+font-size: 14px;
+font-weight: bold;
+color: white;
+padding: 10px 24px;
+border-radius: 25px;
+border: 2px solid  #087cd4;
+}
+
+.button2:hover {
+  background-color:#1884d4;
+  color: white;
+  border: 2px solid #1884d4;
+  cursor: pointer;
+}
+
+.logo img{
+background:white;
+float:left;
+length: 100px;
+width: 140px;
+}
+
+ul li{
+  display: inline-block;
+  padding:10px;
+  font-size:20px;
+}
+
+.wrapper {
+display:inline-block;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#searchQueryInput {
+  width: 30rem;
+  height: 2.8rem;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+  margin-left:200px;
+  margin-right:50px;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left:-7rem;
+  margin-right:170px;
+  margin-top:.5rem;
+  background: none;
+  border: none;
+  outline: none;
+
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+.clearfix::after {
+content: '';
+display:block;
+clear:both;
+}
+
+.content {
+width:90%;
+margin: 30px auto 30px;
+border: 1px solid red;
+}
+
+.content .main-content {
+width: 70%;
+float: left;
+border: 1px solid blue;
+}
+
+.content .sidebar {
+width:70%;
+float:left;
+border: 1px dashed green;
+height: 800px;
+}
+
+.content .main-content .recent-post-title {
+margin:20px;
+}
+
+.content .main-content .post {
+width:95%;
+height: 270px;
+margin:10px auto;
+border-radius: 5px;
+background: white;
+}
+
+.content .main-content .post .post-image {
+width: 40%;
+height:100%;
+float:left;
+}
+
