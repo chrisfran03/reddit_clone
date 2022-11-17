@@ -1,9 +1,9 @@
 from flask import abort, flash, redirect, render_template, request, url_for
 from flask_login import current_user, login_required
 
-from flaskeddit.community import community_service
-from flaskeddit.post import post_blueprint, post_service
-from flaskeddit.post.forms import PostForm, UpdatePostForm
+from reddit.community import community_service
+from reddit.post import post_blueprint, post_service
+from reddit.post.forms import PostForm, UpdatePostForm
 
 
 @post_blueprint.route("/community/<string:name>/post/<string:title>")

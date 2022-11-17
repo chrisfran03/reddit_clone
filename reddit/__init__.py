@@ -2,7 +2,7 @@ from flask import Flask
 from flask_login import LoginManager
 from flask_sqlalchemy import SQLAlchemy
 
-from flaskeddit.config import Config
+from reddit.config import Config
 
 db = SQLAlchemy()
 login_manager = LoginManager()
@@ -12,8 +12,7 @@ login_manager.login_message_category = "danger"
 
 def create_app(config=Config):
     """
-    Factory method for creating the Flaskeddit Flask app.
-    https://flask.palletsprojects.com/en/1.1.x/patterns/appfactories/
+    Factory method for creating the reddit flask app.
     """
     app = Flask(__name__)
     app.config.from_object(config)
@@ -21,14 +20,14 @@ def create_app(config=Config):
     db.init_app(app)
     login_manager.init_app(app)
 
-    from flaskeddit.auth import auth_blueprint
-    from flaskeddit.communities import communities_blueprint
-    from flaskeddit.community import community_blueprint
-    from flaskeddit.feed import feed_blueprint
-    from flaskeddit.post import post_blueprint
-    from flaskeddit.reply import reply_blueprint
-    from flaskeddit.user import user_blueprint
-    from flaskeddit.cli import cli_app_group
+    from reddit.auth import auth_blueprint
+    from reddit.communities import communities_blueprint
+    from reddit.community import community_blueprint
+    from reddit.feed import feed_blueprint
+    from reddit.post import post_blueprint
+    from reddit.reply import reply_blueprint
+    from reddit.user import user_blueprint
+    from reddit.cli import cli_app_group
 
     app.register_blueprint(auth_blueprint)
     app.register_blueprint(communities_blueprint)

@@ -1,8 +1,8 @@
 from flask_login import login_user, logout_user
 from passlib.hash import bcrypt
 
-from flaskeddit import db
-from flaskeddit.models import AppUser
+from reddit import db
+from reddit.models import AppUser
 
 
 def register_user(username, password):

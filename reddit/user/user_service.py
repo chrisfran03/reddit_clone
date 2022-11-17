@@ -1,4 +1,4 @@
-from flaskeddit.models import AppUser
+from reddit.models import AppUser
 
 
 def get_user(username):

@@ -1,6 +1,6 @@
 from flask import render_template
 
-from flaskeddit.user import user_blueprint, user_service
+from reddit.user import user_blueprint, user_service
 
 
 @user_blueprint.route("/user/<string:username>")

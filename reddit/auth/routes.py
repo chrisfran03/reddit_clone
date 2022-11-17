@@ -1,8 +1,8 @@
 from flask import flash, redirect, render_template, request, url_for
 from flask_login import current_user, login_required
 
-from flaskeddit.auth import auth_blueprint, auth_service
-from flaskeddit.auth.forms import LoginForm, RegisterForm
+from reddit.auth import auth_blueprint, auth_service
+from reddit.auth.forms import LoginForm, RegisterForm
 
 
 @auth_blueprint.route("/register", methods=["GET", "POST"])

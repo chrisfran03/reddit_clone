@@ -1,6 +1,6 @@
 from flask import render_template, request
 
-from flaskeddit.communities import communities_blueprint, communities_service
+from reddit.communities import communities_blueprint, communities_service
 
 
 @communities_blueprint.route("/communities")

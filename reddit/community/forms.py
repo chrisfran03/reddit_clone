@@ -4,8 +4,8 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired, ValidationError
 
-from flaskeddit import db
-from flaskeddit.models import Community
+from reddit import db
+from reddit.models import Community
 
 
 class CommunityForm(FlaskForm):

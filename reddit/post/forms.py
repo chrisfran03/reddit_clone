@@ -2,7 +2,7 @@ from flask_wtf import FlaskForm
 from wtforms.fields import IntegerField, StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired, ValidationError
 
-from flaskeddit.models import Post
+from reddit.models import Post
 
 
 class PostForm(FlaskForm):

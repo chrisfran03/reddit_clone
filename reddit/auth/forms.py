@@ -4,7 +4,7 @@ from flask_wtf import FlaskForm
 from wtforms import PasswordField, StringField, SubmitField, ValidationError
 from wtforms.validators import DataRequired, EqualTo, Length
 
-from flaskeddit.models import AppUser
+from reddit.models import AppUser
 
 
 class RegisterForm(FlaskForm):

@@ -1,5 +1,5 @@
-from flaskeddit import db
-from flaskeddit.models import AppUser, Community, CommunityMember, Post, PostVote
+from reddit import db
+from reddit.models import AppUser, Community, CommunityMember, Post, PostVote
 
 
 def get_community(name):

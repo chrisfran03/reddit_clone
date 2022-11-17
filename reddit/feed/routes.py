@@ -1,7 +1,7 @@
 from flask import render_template, request
 from flask_login import current_user
 
-from flaskeddit.feed import feed_blueprint, feed_service
+from reddit.feed import feed_blueprint, feed_service
 
 
 @feed_blueprint.route("/")

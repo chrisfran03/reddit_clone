@@ -1,8 +1,8 @@
 from flask import abort, flash, redirect, render_template, request, url_for
 from flask_login import current_user, login_required
 
-from flaskeddit.community import community_blueprint, community_service
-from flaskeddit.community.forms import CommunityForm, UpdateCommunityForm
+from reddit.community import community_blueprint, community_service
+from reddit.community.forms import CommunityForm, UpdateCommunityForm
 
 
 @community_blueprint.route("/community/<string:name>")

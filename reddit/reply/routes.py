@@ -1,9 +1,9 @@
 from flask import abort, flash, redirect, render_template, request, url_for
 from flask_login import current_user, login_required
 
-from flaskeddit.post import post_service
-from flaskeddit.reply import reply_blueprint, reply_service
-from flaskeddit.reply.forms import ReplyForm
+from reddit.post import post_service
+from reddit.reply import reply_blueprint, reply_service
+from reddit.reply.forms import ReplyForm
 
 
 @reply_blueprint.route(

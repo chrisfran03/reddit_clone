@@ -1,5 +1,5 @@
-from flaskeddit import db
-from flaskeddit.models import Post, Reply, ReplyVote
+from reddit import db
+from reddit.models import Post, Reply, ReplyVote
 
 
 def get_reply(reply_id):

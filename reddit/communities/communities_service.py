@@ -1,5 +1,5 @@
-from flaskeddit import db
-from flaskeddit.models import AppUser, Community, CommunityMember
+from reddit import db
+from reddit.models import AppUser, Community, CommunityMember
 
 
 def get_communities(page):
